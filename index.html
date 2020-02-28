@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space X</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript/chart.js" defer></script>
+	<script type="text/javascript" src="javascript/clock.js" defer></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+	<figure class="logo">
+		<img src="images/logo.png">
+	</figure>
+	<p>Welkom bij deze website van Space X. Hier zijn alle actualiteiten die van belang zijn deze reis naar Mars. Zo vindt u de afstand met afgelegd over de tijd, de zwaartekracht en de actuele atmosfeer.</p>
+	<div id="klokbalk" style="background-color:transparent; color:#FF0000;"></div>
+	<h1>Afstand afgelegd over tijd</h1>
+	<section class="chartWrapper">
+		<section class="chartWrapperArea">
+			<canvas id="myChart" style="display: block;height: 631px;width: 1263px;"></canvas>
+		</section>
+	</section>
+
+	<section class="flex">
+		<section class="zwaartekracht">
+			<h1>Zwaartekracht</h1>
+			<p id="newton">
+				De zwaartekracht is op dit moment </br>... N
+			</p>
+			<figure class="astronaut">
+				<img src="images/astronaut.png">
+			</figure>
+			<figure class="zwaartekrachtmars">
+				<img src="images/mars.png">
+			</figure>
+		</section>
+
+		<section class="atmosfeer">
+			<h1>Atmosfeer</h1>
+			<figure class="atmosfeerlagen">
+				<img src="images/lagen.png">
+			</figure>
+			<p id="lagen">U bevindt zich nu in de <br>statrosfeer.</p>
+			<figure class="atmosfeeraarde">
+				<img src="images/aardbolHalf.png">
+			</figure>
+			<figure class="raket">
+				<img src="images/raket.png">
+			</figure>
+			<figure class="atmosfeermars">
+				<img src="images/marsHalf.png">
+			</figure>
+		</section>
+	</section>
+
+</body>
+</html>
