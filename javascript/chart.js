@@ -1,9 +1,9 @@
 var ctx = document.getElementById('myChart');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
+    // het type chart
     type: 'line',
 
-    // The data for our dataset
+    // de data voor de dataset
     data: {
         labels: ['1 uur', '2 uur', '3 uur', '4 uur', '5 uur', '6 uur', '7 uur', '8 uur', '9 uur', '10 uur', '11 uur', '12 uur', '13 uur', '14 uur', '15 uur', '16 uur', '17 uur'], //x-as
         datasets: [{
@@ -15,21 +15,22 @@ var chart = new Chart(ctx, {
         }]
     },
 
-    // Configuration options go here
+    // styling opties
     options: {
     	legend: {
             fontColor: "white",
             fontSize: 18
         },
         scales: { 
-            yAxes: [{
+            yAxes: [{ //y-as
                 ticks: {
                     fontColor: "white",
                     fontSize: 14,
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stepSize: 50
                 }
             }],
-            xAxes: [{
+            xAxes: [{ //x-as
                 ticks: {
                     fontColor: "white",
                     fontSize: 14,
@@ -43,94 +44,67 @@ var chart = new Chart(ctx, {
 });
 
 var ctx = document.getElementById('myChartTwo');
+ctx.height = 450;
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
+    // type chart
     type: 'bar',
 
-    // The data for our dataset
+    // de data voor de dataset
     data: {
         datasets: [{
             label: 'N2',
-            backgroundColor: 'red',
+            backgroundColor: '#cc6600',
             data: [78.08]
         },
         {
             label: 'O2',
-            backgroundColor: 'yellow',
+            backgroundColor: '#ffcc00',
             data: [20.95]
         },
         {
             label: 'AR',
-            backgroundColor: 'blue',
+            backgroundColor: '#009933',
             data: [0.93]
         },
         {
             label: 'CO2',
-            backgroundColor: 'green',
+            backgroundColor: '#0066cc',
             data: [0.0018]
-        // },
-        // {
-        //     label: 'Ne',
-        //     backgroundColor: 'white',
-        //     data: [0.00052]
-        // },
-        // {
-        //     label: 'He',
-        //     backgroundColor: 'grey',
-        //     data: [0.00022]
-        // },
-        // {
-        //     label: 'CH4',
-        //     backgroundColor: 'pink',
-        //     data: [0.00013]
-        // },
-        // {
-        //     label: 'Kr',
-        //     backgroundColor: 'black',
-        //     data: [0.00005]
-        // },
-        // {
-        //     label: 'N2O',
-        //     backgroundColor: 'orange',
-        //     data: [0.00005]
-        // },
-        // {
-        //     label: 'H2',
-        //     backgroundColor: 'brown',
-        //     data: [0.000008]
-        // },
-        // {
-        //     label: 'Xe',
-        //     backgroundColor: 'purple',
-        //     data: [0.001]
         }]
     },
 
-    // Configuration options go here
+    // syling opties
     options: {
         legend: {
             fontColor: "white",
-            fontSize: 18
+            fontSize: 18,
+            position: 'right',
+            reverse: true
         },
         scales: { 
             yAxes: [{
-                stacked: true,
+                stacked: true, //gestapelde bar
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 14,
+                    beginAtZero: true,
+                    stepSize: 10
+                }
+            }],
+            xAxes: [{
+                stacked: true, //gestapelde bar
+                barThickness: 60,
+                ticks: {
                     fontColor: "white",
                     fontSize: 14,
                     beginAtZero: true
-            }],
-            xAxes: [{
-                stacked: true,
-                    fontColor: "white",
-                    fontSize: 14,
-                    stepSize: 1,
-                    beginAtZero: true,
+                }
             }]
 
         }
     }
 });
 
-
+//de newton bij de zwaartekracht section verandert door input
 var zwaartekracht=9.81;
 ZwNewton.innerHTML=zwaartekracht;

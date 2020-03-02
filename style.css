@@ -1,4 +1,5 @@
-*{
+
+*{ /*alle tekst dezelfde stijl en grootte*/
 	font-family: Verdana, sans-serif;
 	font-size: 12pt;
 }
@@ -9,11 +10,11 @@ body{
 	margin: 0;
 	background-attachment: fixed;
 }
-#klokbalk{
+#klokbalk{ /*de klok bovenin*/
 	height: 20px;
 	text-align: center;
 }
-.logo{
+.logo{ /*het logo staat vast en scrollt niet mee*/
 	background-color: black;
 	margin: 0;
 	position: fixed;
@@ -22,19 +23,19 @@ body{
 	z-index: 2;
 	top: 0;
 }
-figure{
+figure{ /*container voor afbeelding*/
 	margin: 0;
 }
 .logo > img{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	width: 10%;
+	width: 120px;
 }
 p{
 	color: white;
 	margin: 50px;
-	margin-top: 150px;
+	margin-top: 120px;
 }
 h1{
 	background-color: white;
@@ -45,11 +46,11 @@ h1{
 	padding-top: 10px;
 	margin-top: 170px;
 }
-h1:first-of-type{
+h1:first-of-type{ /*>afstand afgelegd over tijd*/
 	margin-top: 50px;
 	margin-bottom: 70px;
 }
-.chartWrapper{
+.chartWrapper{ /*hierin zit containter voor chart*/
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
@@ -57,11 +58,11 @@ h1:first-of-type{
 	margin-right: auto;
 	margin-left: auto;
 }
-.chartWrapperArea{
+.chartWrapperArea{ /*container voor chart*/
 	width: 200%;
 	flex: 0 0 auto;
 }
-#myChart{
+#myChart{ /*lijnchart*/
 	color: black;
 	line-height: 1.6;
 }
@@ -73,7 +74,7 @@ h1:first-of-type{
 .zwaartekracht{
 	width: 100%;
 }
-#newton{
+#newton{ /*p met tekst aantal newton*/
 	position: absolute;
 	color: white;
 	background-color: black;
@@ -101,6 +102,12 @@ h1:first-of-type{
 
 .atmosfeer{
 	width: 100%;
+}
+.chartWrapperAreaTwo{
+	margin-top: 30px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 @media (min-device-width: 678px){
