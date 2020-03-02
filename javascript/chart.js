@@ -41,3 +41,96 @@ var chart = new Chart(ctx, {
         }
     }
 });
+
+var ctx = document.getElementById('myChartTwo');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        datasets: [{
+            label: 'N2',
+            backgroundColor: 'red',
+            data: [78.08]
+        },
+        {
+            label: 'O2',
+            backgroundColor: 'yellow',
+            data: [20.95]
+        },
+        {
+            label: 'AR',
+            backgroundColor: 'blue',
+            data: [0.93]
+        },
+        {
+            label: 'CO2',
+            backgroundColor: 'green',
+            data: [0.0018]
+        // },
+        // {
+        //     label: 'Ne',
+        //     backgroundColor: 'white',
+        //     data: [0.00052]
+        // },
+        // {
+        //     label: 'He',
+        //     backgroundColor: 'grey',
+        //     data: [0.00022]
+        // },
+        // {
+        //     label: 'CH4',
+        //     backgroundColor: 'pink',
+        //     data: [0.00013]
+        // },
+        // {
+        //     label: 'Kr',
+        //     backgroundColor: 'black',
+        //     data: [0.00005]
+        // },
+        // {
+        //     label: 'N2O',
+        //     backgroundColor: 'orange',
+        //     data: [0.00005]
+        // },
+        // {
+        //     label: 'H2',
+        //     backgroundColor: 'brown',
+        //     data: [0.000008]
+        // },
+        // {
+        //     label: 'Xe',
+        //     backgroundColor: 'purple',
+        //     data: [0.001]
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        legend: {
+            fontColor: "white",
+            fontSize: 18
+        },
+        scales: { 
+            yAxes: [{
+                stacked: true,
+                    fontColor: "white",
+                    fontSize: 14,
+                    beginAtZero: true
+            }],
+            xAxes: [{
+                stacked: true,
+                    fontColor: "white",
+                    fontSize: 14,
+                    stepSize: 1,
+                    beginAtZero: true,
+            }]
+
+        }
+    }
+});
+
+
+var zwaartekracht=9.81;
+ZwNewton.innerHTML=zwaartekracht;
