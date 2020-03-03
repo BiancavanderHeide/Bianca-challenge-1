@@ -1,4 +1,2 @@
 # Bianca challenge 1
-Dit is de eerste challenge voor het vak IxD & Technology 2
-
-## Space X
+Dit is de eerste challenge voor het vak IxD & Technology 2 waar een website ontworpen moet worden voor SpaceX. Ik heb gekozen voor drie onderwerpen die bij elkaar horen; afstand, zwaartekracht en atmosfeer, omdat de website voor de astronauten is die gemakkelijk de omgeving in de gaten moeten houden. Het is een simpele layout, zodat de informatie goed opvalt met duidelijke kopjes erboven. De gegevens kunnen verbonden worden in de javascript aan een externe website die huidige gegevens zal tonen. Ik heb gebruik gemaakt van flexboxen om de laatste twee genoemde charts naast elkaar te tonen bij grotere beeldschermen dan mobiel en tablet, om de ruimte te benutten.
