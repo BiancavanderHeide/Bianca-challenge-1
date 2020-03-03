@@ -2,7 +2,6 @@ var ctx = document.getElementById('myChart');
 var chart = new Chart(ctx, {
     // het type chart
     type: 'line',
-
     // de data voor de dataset
     data: {
         labels: ['1 uur', '2 uur', '3 uur', '4 uur', '5 uur', '6 uur', '7 uur', '8 uur', '9 uur', '10 uur', '11 uur', '12 uur', '13 uur', '14 uur', '15 uur', '16 uur', '17 uur'], //x-as
@@ -14,10 +13,9 @@ var chart = new Chart(ctx, {
             data: [0, 17, 45, 63, 84, 99, 127, 143 , 165, 197, 268, 297, 349, 423, 482, 581, 636] //y-as
         }]
     },
-
     // styling opties
     options: {
-    	legend: {
+        legend: {
             fontColor: "white",
             fontSize: 18
         },
@@ -38,7 +36,6 @@ var chart = new Chart(ctx, {
                     beginAtZero: true
                 }
             }]
-
         }
     }
 });
@@ -48,7 +45,6 @@ ctx.height = 450;
 var chart = new Chart(ctx, {
     // type chart
     type: 'bar',
-
     // de data voor de dataset
     data: {
         datasets: [{
@@ -72,7 +68,6 @@ var chart = new Chart(ctx, {
             data: [0.0018]
         }]
     },
-
     // syling opties
     options: {
         legend: {

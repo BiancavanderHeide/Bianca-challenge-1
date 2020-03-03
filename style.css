@@ -42,7 +42,7 @@ h1{
 	color: black;
 	font-size: 16pt;
 	text-align: center;
-	height: 40px;
+	height: 35px;
 	padding-top: 10px;
 	margin-top: 170px;
 }
@@ -50,15 +50,15 @@ h1:first-of-type{ /*>afstand afgelegd over tijd*/
 	margin-top: 50px;
 	margin-bottom: 70px;
 }
-.chartWrapper{ /*hierin zit containter voor chart*/
+.chartWrapper{ /*hierin zit containter voor lijnchart*/
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
-	width: 80%;
+	width: 85%;
 	margin-right: auto;
 	margin-left: auto;
 }
-.chartWrapperArea{ /*container voor chart*/
+.chartWrapperArea{ /*container voor lijnchart*/
 	width: 200%;
 	flex: 0 0 auto;
 }
@@ -103,24 +103,32 @@ h1:first-of-type{ /*>afstand afgelegd over tijd*/
 .atmosfeer{
 	width: 100%;
 }
-.chartWrapperAreaTwo{
+.chartWrapperAreaTwo{ /*chart voor stoffen in atmosfeer*/
 	margin-top: 30px;
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-@media (min-device-width: 678px){
-	
+@media (min-device-width: 678px){ /*tablet*/
+	.chartWrapperArea{ /*container voor lijnchart*/
+		width: 150%;
+	}	
 }
-
-@media (min-device-width: 981px){
-	.chartWrapperArea{
-		width: 100%;
+@media (min-device-width: 981px){ /*ipad*/
+	.content{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
 	}
-	
 }
-@media (min-width: 1280px){
+@media (min-width: 1280px){ /*laptop*/
+	.content{
+		width: 80%;
+	}
+	.chartWrapperArea{ /*container voor lijnchart*/
+		width: 100%;
+	}	
 	.zwaartekracht{
 		margin-right: 10px;
 		width: 50%;
@@ -138,9 +146,10 @@ h1:first-of-type{ /*>afstand afgelegd over tijd*/
 		flex-direction: row;
 	}
 	#newton{
-		margin-left: 33%;
+		margin-left: 24%;
+		margin-right: 0;
 		margin-top: 7%;
-		width: 15%;
+		width: 14%;
 	}
 	body>p{
 		width: 70%;
@@ -148,14 +157,13 @@ h1:first-of-type{ /*>afstand afgelegd over tijd*/
 		margin-left: auto;
 	}
 }
-@media (min-width: 1920px){
+@media (min-width: 1920px){ /*grote laptop*/
 	body>p{
 		width: 40%;
 	}
-	body{
-		width: 80%;
+	.content{
+		width: 60%;
 		margin-right: auto;
 		margin-left: auto;
 	}
-
 }
